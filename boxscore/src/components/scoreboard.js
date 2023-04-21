@@ -15,14 +15,14 @@ const Scoreboard=(props)=>{
                             <td style={{ color: "white" }}>Filler</td>
                         </tr>
                         <tr>
-                            <td class={styles.teamNames}>
-                                <div class={styles.scoreLabel}>
+                            <td className={styles.teamNames}>
+                                <div className={styles.scoreLabel}>
                                     <Image
                                         src={"/barstoolIcon.png"}
                                         alt={"image"}
                                         width="20"
                                         height="20"
-                                        class="rounded-circle"
+                                        className="rounded-circle"
                                     ></Image>
                                     {props.gameData.awayTeam.abbrev}
                                 </div>
@@ -36,7 +36,7 @@ const Scoreboard=(props)=>{
                                         alt={"image"}
                                         width="20"
                                         height="20"
-                                        class="rounded-circle"
+                                        className="rounded-circle"
                                     ></Image>
                                     {props.gameData.homeTeam.abbrev}
                                 </div>
@@ -56,12 +56,12 @@ const Scoreboard=(props)=>{
                         </thead>
                         <tbody>
                         <tr>
-                            {props.gameData.homeScore.map((score, idx) => {
+                            {props.gameData.awayScore.map((score, idx) => {
                                 return <td key={idx}>{score}</td>;
                             })}
                         </tr>
                         <tr>
-                            {props.gameData.awayScore.map((score, idx) => {
+                            {props.gameData.homeScore.map((score, idx) => {
                                 return <td key={idx}>{score}</td>;
                             })}
                         </tr>
@@ -79,7 +79,7 @@ const Scoreboard=(props)=>{
                                     width="48"
                                     height="48"
                                     alt={"image"}
-                                    class={`rounded-circle ${styles.avatar}`}
+                                    className={`rounded-circle ${styles.avatar}`}
                                 ></Image>
                                 <div className={styles.playerSummaryStats}>
                                     <span>{player.status}</span>

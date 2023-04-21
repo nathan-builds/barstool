@@ -28,7 +28,8 @@ const ScoreWidget = (props) => {
     const updateData = () => {
         fetch(`http://localhost:5000/${props.sport}`)
             .then((res) => res.json())
-            .then((response) => processCall(response));
+            .then((response) => processCall(response))
+            .catch(err => console.log(`ERROR FETCHING DATA${err}`))
     };
 
     /**

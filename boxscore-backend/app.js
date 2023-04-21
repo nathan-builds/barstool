@@ -44,5 +44,5 @@ app.get('/mlb', (req, res, next) => {
 
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Backend is listening on port ${port}`)
 })

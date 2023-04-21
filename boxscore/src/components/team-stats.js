@@ -10,8 +10,8 @@ import Table from "react-bootstrap/Table";
  * @returns {JSX.Element}
  * @constructor
  */
-export const TeamStats=(props)=>{
-    return(
+export const TeamStats = (props) => {
+    return (
         <Card className={styles.cardContainer}>
             <Row>
                 <Col className={styles.tableCol}>
@@ -21,9 +21,9 @@ export const TeamStats=(props)=>{
                             alt={"image"}
                             width="32"
                             height="32"
-                            class="rounded-circle"
+                            className="rounded-circle"
                         ></Image>
-                        {props.gameData.homeTeam.abbrev}
+                        {props.gameData.awayTeam.abbrev}
                     </div>
                     <Table striped bordered hover size="sm">
                         <thead>
@@ -54,9 +54,9 @@ export const TeamStats=(props)=>{
                                 alt={"image"}
                                 width="32"
                                 height="32"
-                                class="rounded-circle"
+                                className="rounded-circle"
                             ></Image>
-                            {props.gameData.awayTeam.abbrev}
+                            {props.gameData.homeTeam.abbrev}
                         </div>
                     </div>
                     <Table striped hover bordered size="sm">

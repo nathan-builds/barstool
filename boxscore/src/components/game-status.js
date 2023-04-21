@@ -4,7 +4,8 @@ import Image from "next/image";
 
 
 /***
- * This component renders the current state of the game and the overall scores
+ * This component renders the current state of the game and the overall scores. NOTE
+ * the Team records are hardcoded, didn't see that information in the JSON
  * @param props
  * @returns {JSX.Element}
  * @constructor
@@ -24,7 +25,7 @@ const GameStatus = (props) => {
                             width="48"
                             height="48"
                             alt={"image"}
-                            class={`rounded-circle ${styles.avatar}`}
+                            className={`rounded-circle ${styles.avatar}`}
                         ></Image>
                         <div className={styles.score}>{props.gameData.currentAwayScore}</div>
                     </div>
@@ -46,7 +47,7 @@ const GameStatus = (props) => {
                             width="48"
                             height="48"
                             alt={"image"}
-                            class={`rounded-circle ${styles.avatar}`}
+                            className={`rounded-circle ${styles.avatar}`}
                         ></Image>
                     </div>
                 </Col>
