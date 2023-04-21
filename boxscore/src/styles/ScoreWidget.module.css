@@ -1,0 +1,116 @@
+.container {
+    margin-top: 100px;
+}
+
+.scoreLabel {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.tableTeamNames {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.teamNameTableColumn {
+    padding-right: 0;
+}
+
+.scoreTableColumn {
+    padding-left: 0;
+}
+
+.table {
+    margin-left: 5px;
+}
+
+
+.tableCol {
+    margin: 5px;
+    border-right: 1px solid #e0dada;
+}
+
+
+.cardContainer {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+
+.tableStyles {
+
+}
+
+.scoreTable th, .scoreTable td {
+    text-align: center;
+}
+
+.rootContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.playerSummary {
+    display: flex;
+    gap: 10px
+}
+
+.score {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.currentGameState {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #942b2b;
+    font-weight: bold;
+}
+
+.currentScoreAway {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.currentScoreAwayStats {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+
+.currentScoreAwayStats :first-child {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.playerSummaryStats {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.teamNames {
+    font-weight: bold;
+}
+
+.avatar {
+    padding: 5px;
+}
+
+.sportsButtons {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+
