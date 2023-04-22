@@ -39,12 +39,11 @@
 .cardContainer {
     overflow: hidden;
     margin-bottom: 10px;
+    min-width: 450px;
 }
 
 
-.tableStyles {
 
-}
 
 .scoreTable th, .scoreTable td {
     text-align: center;
@@ -62,7 +61,7 @@
 
 .score {
     font-weight: bold;
-    font-size: 30px;
+    font-size: clamp(12px, 3vw, 40px);
 }
 
 .currentGameState {
@@ -88,7 +87,7 @@
 }
 
 .currentScoreAwayStats :first-child {
-    font-size: 26px;
+    font-size: clamp(12px, 3vw, 40px);
     font-weight: bold;
 }
 
@@ -103,7 +102,7 @@
 }
 
 .avatar {
-    padding: 5px;
+
 }
 
 .sportsButtons {

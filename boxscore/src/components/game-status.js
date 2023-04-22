@@ -22,8 +22,8 @@ const GameStatus = (props) => {
                         </div>
                         <Image
                             src="/barstoolIcon.png"
-                            width="48"
-                            height="48"
+                            width="32"
+                            height="32"
                             alt={"image"}
                             className={`rounded-circle ${styles.avatar}`}
                         ></Image>
@@ -44,9 +44,10 @@ const GameStatus = (props) => {
                         </div>
                         <Image
                             src="/barstoolIcon.png"
-                            width="48"
-                            height="48"
+                            width="32"
+                            height="32"
                             alt={"image"}
+                            thumbnail={true}
                             className={`rounded-circle ${styles.avatar}`}
                         ></Image>
                     </div>
