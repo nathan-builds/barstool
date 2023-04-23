@@ -16,7 +16,6 @@ const ScoreWidget = (props) => {
      * @param response the JSON response from the server
      */
     const processCall = (response) => {
-        console.log(response)
         const data = mapData(props.sport, response.message);
 
         setGameData(prevState => {
