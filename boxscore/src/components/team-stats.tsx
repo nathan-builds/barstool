@@ -1,5 +1,5 @@
 import {Card, Col, Row} from "react-bootstrap";
-import styles from "@/styles/ScoreWidget.module.css";
+import styles from "../styles/ScoreWidget.module.css";
 import Image from "next/image";
 import Table from "react-bootstrap/Table";
 

@@ -1,12 +1,12 @@
 import {Card, Col, Row} from "react-bootstrap";
-import styles from "@/styles/ScoreWidget.module.css";
+import styles from "../styles/ScoreWidget.module.css";
 import Table from "react-bootstrap/Table";
 import Image from "next/image";
 
 const Scoreboard=(props)=>{
     return(
         <Card className={styles.cardContainer}>
-            <Row className={styles.tableStyles}>
+            <Row>
                 <Col xs={2} className={styles.teamNameTableColumn}>
                     <Table bordered size="sm">
                         <thead></thead>

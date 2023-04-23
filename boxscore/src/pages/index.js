@@ -1,4 +1,4 @@
-import ScoreWidget from "@/components/score-widget";
+import ScoreWidget from "../components/score-widget";
 import {useState} from "react";
 import styles from "../styles/ScoreWidget.module.css";
 

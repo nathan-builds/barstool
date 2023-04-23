@@ -1,5 +1,5 @@
 import {Card, Col, Row} from "react-bootstrap";
-import styles from "@/styles/ScoreWidget.module.css";
+import styles from "../styles/ScoreWidget.module.css";
 import Image from "next/image";
 
 
@@ -47,7 +47,6 @@ const GameStatus = (props) => {
                             width="32"
                             height="32"
                             alt={"image"}
-                            thumbnail={true}
                             className={`rounded-circle ${styles.avatar}`}
                         ></Image>
                     </div>

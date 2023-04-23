@@ -1,14 +1,14 @@
 import styles from "../styles/ScoreWidget.module.css";
 import Container from "react-bootstrap/Container";
 import {useEffect, useState} from "react";
-import {gameState, mapData} from "@/utils/utils";
-import GameStatus from "@/components/game-status";
-import Scoreboard from "@/components/scoreboard";
-import TeamStats from "@/components/team-stats";
+import {initialState, mapData} from "../utils/utils";
+import GameStatus from "../components/game-status";
+import Scoreboard from "../components/scoreboard";
+import TeamStats from "../components/team-stats";
 
 const ScoreWidget = (props) => {
     // The state used to generate all the details in the template
-    const [gameData, setGameData] = useState({game: gameState});
+    const [gameData, setGameData] = useState({game: initialState});
 
     /***
      *Takes the JSON and maps it to a more generic format that is
@@ -16,7 +16,9 @@ const ScoreWidget = (props) => {
      * @param response the JSON response from the server
      */
     const processCall = (response) => {
-        const data = mapData(props.sport, response);
+        console.log(response)
+        const data = mapData(props.sport, response.message);
+
         setGameData(prevState => {
             return {...prevState, game: data}
         });
@@ -29,7 +31,7 @@ const ScoreWidget = (props) => {
         fetch(`http://localhost:5000/${props.sport}`)
             .then((res) => res.json())
             .then((response) => processCall(response))
-            .catch(err => console.log(`ERROR FETCHING DATA${err}`))
+            .catch(err => console.log(`ERROR FETCHING DATA ${err}`))
     };
 
     /**
@@ -47,7 +49,7 @@ const ScoreWidget = (props) => {
     /***
      * The idea is to have a generic template that most sports would line up with, a Status, a Scoreboard
      * and highlighted team stats. This template can be followed for any sport as long as the data is mapped
-     * into a gameState object
+     * into the GameState interface shape
      */
     return (
         <div className={styles.rootContainer}>
