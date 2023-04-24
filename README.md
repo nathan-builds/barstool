@@ -3,6 +3,8 @@ Thanks for checking out this project! The idea was to expand on the simple bosxc
 This widget contains the live scores and game status, highlighted players depending on the sport, and different player stats below the main scores. It was 
 constructed in a generic way to enable the support of more sports in the future. The steps to run this project are below!
 
+Tech Stack: NextJS and Typescript on the frontend, ExpressJS with MongoDB on the backend.
+
 Steps to run:
 
 1. From inside boxscore-backend run the following commands from a terminal
