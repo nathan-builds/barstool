@@ -1,6 +1,6 @@
 # barstool
 Thanks for checking out this project! The idea was to expand on the simple bosxcore widget by using more of the data available from the JSON feed. 
-This widget contains the live scores and game status, highlighted players depending on the sport, and different player stats in below. It was 
+This widget contains the live scores and game status, highlighted players depending on the sport, and different player stats below the main scores. It was 
 constructed in a generic way to enable the support of more sports in the future. The steps to run this project are below!
 
 Steps to run:
